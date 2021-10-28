@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="main.js" defer></script>
 </head>
 
@@ -17,22 +20,28 @@
         </div>
     </header>
     <main>
-        <div class="container">
+        <div class="container flex">
             <h2>Player X's turn</h2>
             <div id="table" class="grid">
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
+                <div class="cell" dataID="0">X</div>
+                <div class="cell" dataID="1">O</div>
+                <div class="cell" dataID="2">X</div>
+                <div class="cell" dataID="3">X</div>
+                <div class="cell" dataID="4">X</div>
+                <div class="cell" dataID="5">X</div>
+                <div class="cell" dataID="6">O</div>
+                <div class="cell" dataID="7">O</div>
+                <div class="cell" dataID="8">O</div>
             </div>
             <button id="btn-restart" class="btn">Restart</button>
         </div>
     </main>
+    <footer>
+        <div class="container flex">
+            <p>Copyright &copy; 2021 PetarR21 <a href="https://github.com/PetarR21/odin-library" target="_blank">
+                    <i class="fab fa-github fa-1x"></i></a></p>
+        </div>
+    </footer>
 </body>
 
 </html>

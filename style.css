@@ -6,21 +6,114 @@
 }
 
 html, body {
-    font-family: 'Concert One', cursive;
-    background-color: #A3C6C4;
+    font-family: 'Varela Round', sans-serif;
+    background-color: #dab692;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header */
 
 header {
-    height: 175px;
-    color: #E0E7E9;
-    background-color: #354649;
+    height: 150px;
+    color: #dab692;
+    background-color: #8f5b34;
 }
 
 header h1 {
-    font-size: 100px;
+    font-size: 90px;
     text-align: center;
+}
+
+/* Main */
+
+main {
+    height: 675px;
+    margin: 30px 0;
+}
+
+main h2 {
+    color: #7c4f2d;
+    font-size: 45px;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+main .flex {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main #table {
+    height: 450px;
+    width: 450px;
+    margin: 0 auto;
+    border: 1px solid #7c4f2d;
+}
+
+main #btn-restart {
+    height: 10%;
+}
+
+main .cell {
+    background-color: #e3dad2;
+    color: #7c4f2d;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #7c4f2d;
+    cursor: pointer;
+}
+
+main .cell:hover {
+    background-color: wheat;
+}
+
+main #btn-restart {
+    font-family: inherit;
+    font-size: 28px;
+    box-sizing: unset;
+    background-color: #e3dad2;
+    outline: none;
+    border: 3px solid #7c4f2d;
+    color: #7c4f2d;
+    border-radius: 5px;
+    font-weight: 600px;
+}
+
+main #btn-restart:hover {
+    background-color: wheat;
+    transform: scale(1.01);
+}
+
+/* Footer */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #7c4f2d;
+    font-size: 20px;
+    word-spacing: 5px;
+}
+
+footer a {
+    color: #7c4f2d;
+}
+
+footer i:hover {
+    -webkit-animation: spin 0.5s linear 1;
+    -moz-animation: spin 0.5s linear 1;
+    animation: spin 0.5s linear 1;
 }
 
 /* Utilities */
@@ -38,10 +131,20 @@ header h1 {
     align-items: center;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.btn {
+    padding: 0px 40px;
+}
+
 /* Media queries */
 
 @media(max-width: 500px) {
-    header{
+    header {
         height: auto;
     }
 }
