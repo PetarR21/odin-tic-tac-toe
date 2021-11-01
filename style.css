@@ -42,6 +42,10 @@ main h2 {
     align-items: center;
 }
 
+main #text-turn {
+    margin: 0 15px;
+}
+
 main .flex {
     flex-direction: column;
     justify-content: space-between;
@@ -51,7 +55,7 @@ main #table {
     height: 450px;
     width: 450px;
     margin: 0 auto;
-    border: 1px solid #7c4f2d;
+    border: 2px solid #7c4f2d;
 }
 
 main #btn-restart {
@@ -61,7 +65,7 @@ main #btn-restart {
 main .cell {
     background-color: #e3dad2;
     color: #7c4f2d;
-    font-size: 48px;
+    font-size: 56px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +138,7 @@ footer i:hover {
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .btn {
